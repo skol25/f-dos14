@@ -9,3 +9,30 @@
     --main-white: #ffffff;
 
 }
+/*text colors*/
+
+
+
+
+/* backgournd Colors */
+.bg-white{
+
+    background-color: var(--main-white);
+}
+
+.bg-blue{
+    background-color: var(--main-dark-blue);
+
+}
+
+/* general sizes */
+
+.img-size-80{
+    width: 80px;
+    height: 80px;
+}
+
+.img-size-20{
+    width: 30px;
+    height: 30px;
+}
