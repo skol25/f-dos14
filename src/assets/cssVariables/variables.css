@@ -1,0 +1,11 @@
+/* paleta de colores generales*/
+:root {
+    
+    --main-gray: #EAEAEA;
+    --main-orange: #fc9b03;
+    --main-dark-blue: #030b32;
+    --main-blue: #02478a;
+    --main-black: #0f0b0c;
+    --main-white: #ffffff;
+
+}
