@@ -9,9 +9,33 @@
     --main-white: #ffffff;
 
 }
-/*text colors*/
+/*text style*/
 
+.color-whithe{
+    color: var(--main-white);
+}
+.color-whithe:hover{
+    color: var(--main-orange);
+}
 
+.color-orange{
+    color: var(--main-orange);
+}
+
+.color-orange-link{
+    color: var(--main-orange);
+    text-decoration: none;
+
+}
+.color-orange-link:hover{
+    color: var(--main-orange);
+    text-decoration: none;
+    
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
 
 
 /* backgournd Colors */
