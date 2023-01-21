@@ -1,0 +1,13 @@
+.bg-img-1{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 250px;
+    background-image: linear-gradient(
+
+      rgba(2, 70, 138, 0.372),
+      rgba(2, 70, 138, 0.372)
+     ),  
+     url(../../../assets/images/quienesSomosBg.svg);
+}
