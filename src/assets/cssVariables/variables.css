@@ -11,10 +11,10 @@
 }
 /*text style*/
 
-.color-whithe{
+.color-white{
     color: var(--main-white);
 }
-.color-whithe:hover{
+.color-white:hover{
     color: var(--main-orange);
 }
 
@@ -59,4 +59,28 @@
 .img-size-20{
     width: 30px;
     height: 30px;
+}
+
+.img-size-70{
+    width: 60px;
+    height: auto;
+}
+.img-size-auto{
+
+    width: auto;
+    height: auto;
+}
+
+
+/* button styles*/
+
+.buttonDos14Orange{
+
+    color: var(--main-white);
+    background-color: var(--main-orange);
+    border: none;
+
+}
+.buttonDos14Orange:hover{
+    background-color: #d68604;
 }

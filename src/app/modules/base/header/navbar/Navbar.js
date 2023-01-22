@@ -9,31 +9,31 @@ export default function Navbar() {
       tittle:'Inicio',
       path:'/inicio',
       image:'',
-      css:'text-decoration-none color-whithe p-2'
+      css:'text-decoration-none color-white p-2'
     },
     {
       tittle:'Nosotros',
       path:'/inicio/nosotros',
       image:'',
-      css:'text-decoration-none color-whithe p-2'
+      css:'text-decoration-none color-white p-2'
     },
     {
       tittle:'Nuestros servicios',
       path:'/inicio/nuestros_servicios',
       image:'',
-      css:'text-decoration-none color-whithe p-2'
+      css:'text-decoration-none color-white p-2'
     },
       {
       tittle:'Misión y visión',
       path:'/inicio/mision_vision',
       image:'',
-      css:'text-decoration-none color-whithe p-2'
+      css:'text-decoration-none color-white p-2'
     },
     {
       tittle:'Contactenos',
       path:'/inicio/contactenos',
       image:'',
-      css:'text-decoration-none color-whithe p-2'
+      css:'text-decoration-none color-white p-2'
     },
   ]
 
