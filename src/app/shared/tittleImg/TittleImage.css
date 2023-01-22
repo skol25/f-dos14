@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    min-width: auto;
     min-height: 250px;
+    color: var(--main-white);
     background-image: linear-gradient(
 
       rgba(2, 70, 138, 0.372),
@@ -11,3 +13,19 @@
      ),  
      url(../../../assets/images/quienesSomosBg.svg);
 }
+.bg-img-home{
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  color: var(--main-white);
+  background-image: linear-gradient(
+
+    rgba(255, 255, 255, 0.23),
+    rgba(255, 255, 255, 0.23)
+   ),  
+   url(../../../assets/images/imageBgHome.svg);
+}
+
