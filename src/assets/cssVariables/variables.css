@@ -10,6 +10,11 @@
 
 }
 /*text style*/
+.color-black{
+
+    color: var(--main-black);
+
+}
 
 .color-white{
     color: var(--main-white);
@@ -83,4 +88,13 @@
 }
 .buttonDos14Orange:hover{
     background-color: #d68604;
+}
+
+
+/*Border colors*/
+
+.border-orange-b{
+
+    border-bottom: 2px solid var(--main-orange);
+    
 }

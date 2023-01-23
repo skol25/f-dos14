@@ -1,11 +1,10 @@
 import React from 'react'
 import './inputStandar.css'
 
-export default function InputStandar() {
+export default function InputStandar({placeholder}) {
   return (
-    <div>
-        <input placeholder='hola' className='input-default p-2' />
-   
-    </div>
+      
+        <input  placeholder={placeholder} className='input-default p-2  mt-2 mb-2' />
+  
   )
 }
