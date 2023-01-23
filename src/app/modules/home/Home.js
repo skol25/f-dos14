@@ -10,6 +10,8 @@ import ButtonSubmit from '../../shared/butttonSubmit/buttonSubmit'
 import OurQuality from '../../../assets/images/verificatedIcon.svg'
 import OurQualityEmployer from '../../../assets/images/userVerifiedIcon.svg'
 import imageWorkers from '../../../assets/images/imageWorkers.svg'
+import misionVisionImage from '../../../assets/images/misionVisionImage.svg'
+import FormComponent from '../../shared/formComponent/formComponent'
 
 
 
@@ -107,6 +109,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              <div className='d-flex justify-content-center'>
+
+                <ButtonSubmit textButton={'Nosotros'} />
+
+              </div>
+
               
               </div>
               
@@ -119,6 +127,54 @@ export default function Home() {
     
         </div>
     </div>
+
+
+    {/*msision y vision */}
+    <div className='bg-white mt-4'>
+      <div className='container'>
+          <div className='row pt-4 pb-4'>
+            
+            <img  src={misionVisionImage} className='col-4' alt=' mision vission'/>
+            
+            <div className='col-8 p-0 m-0 text-center align-items-center'>
+              <h3 className='color-orange' >Misión y visión</h3>
+              <p>
+                Constructora DOS14 es una empresa que fue fundada con la determinación de hacer de
+                nuestro entorno un lugar mejor, por lo que está basada en la ética, el profesionalismo y la
+                integridad de hacer nuestro trabajo correctamente
+              </p>
+              <p>
+                Velamos por que la seguridad y estándares de obras y obreros sea respetada y adecuada, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.
+              </p>
+              
+              <ButtonSubmit textButton={'NUESTRA MISION Y VISION'} />
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/*galeria*/}
+
+
+
+
+    {/*contactenos*/} 
+    <div className='bg-blue pt-2 pb-2'>
+      <div className='container'>
+
+        <FormComponent/>
+
+
+      </div>
+
+          
+
+
+
+
+    </div>
+
 
 
 
