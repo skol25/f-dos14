@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <React.Fragment>
     <div className='bg-white'>
-      <div className='d-flex container justify-content-between align-items-center pt-2 pb-2'>
+      <div className='d-flex container justify-content-between align-items-center  '>
 
         <img src={logoDos14} alt='logo' className='img-fluid img-size-80' />
 

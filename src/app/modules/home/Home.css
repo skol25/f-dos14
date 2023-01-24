@@ -1,0 +1,15 @@
+.clase-img{
+
+    height: 100%;
+    display: block;
+}
+
+.h-250{
+    height: 250px;
+    width: 5px;
+}
+.v-line{
+    border-left: 2px solid #fc9b03;
+    height:auto;
+   
+   }
