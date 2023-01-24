@@ -6,8 +6,8 @@
     color: #212121;
 }
 .input-default:focus{
-   
-    border: #212121 5px solid;
+   outline: none;
+    
 }
 .input-default::placeholder{
     color: #212121;

@@ -11,7 +11,9 @@ import OurQuality from '../../../assets/images/verificatedIcon.svg'
 import OurQualityEmployer from '../../../assets/images/userVerifiedIcon.svg'
 import imageWorkers from '../../../assets/images/imageWorkers.svg'
 import misionVisionImage from '../../../assets/images/misionVisionImage.svg'
+import imgContact from '../../../assets/images/imgContact.svg'
 import FormComponent from '../../shared/formComponent/formComponent'
+
 
 
 
@@ -160,11 +162,24 @@ export default function Home() {
 
 
     {/*contactenos*/} 
-    <div className='bg-blue pt-2 pb-2'>
+    <div className='bg-blue pt-4 pb-4 '>
       <div className='container'>
+        <div className='d-flex justify-content-between h-auto position-relative'>
 
-        <FormComponent/>
+          <div className='h-100'>
+           <FormComponent isbgDark={true}/>
+          </div>
+          <div class="v-line m-2 ms-4 d-none d-md-block p-2">
+          </div>
+          <div className=' m-0 p-0'>
+            <img src={imgContact} className='w-100 h-100' alt='contacto'/>
+          </div>
 
+
+
+        </div>
+        
+        
 
       </div>
 
