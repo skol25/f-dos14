@@ -10,3 +10,9 @@ body {
   background-color: var(--main-gray) !important;
   
 }
+
+img{
+  width: 100%;
+  object-fit: contain;
+ 
+}

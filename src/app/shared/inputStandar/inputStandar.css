@@ -1,0 +1,14 @@
+.input-default{
+    padding: inherit;
+    outline: none;
+    border: none;
+    background-color: var(--main-white);
+    color: #212121;
+}
+.input-default:focus{
+   outline: none;
+    
+}
+.input-default::placeholder{
+    color: #212121;
+}
