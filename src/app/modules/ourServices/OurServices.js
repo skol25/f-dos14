@@ -25,6 +25,7 @@ import service3 from '../../../assets/images/latestWorks/service3.svg'
 export default function OurServices() {
 
   let cardInfo=[
+
     {
       tittle:'DISEÑO',
       description:'Cronograma de trabajo, donde se identifican todas las etapas del diseño..',
@@ -43,6 +44,7 @@ export default function OurServices() {
       bgImage:'p-4 m-0 color-white bg-service',
       icon:serviceIcon
     },
+    
   ]
 
   let leatestWork=[
@@ -68,8 +70,6 @@ export default function OurServices() {
       categories:['Mantenimiento a sistema de transporte vertical','Mantenimiento a sistemas de bombeo','Mantenimiento de redes de aguas blancas y servidas','Mantenimiento a aires acondicionados centrales y particulares','Mantenimiento a sistemas eléctricos (Grupos Electrógenos, Sub-estaciones, entre otros)','Administración delegada.'],
       images:[service1,service2,service3]
     },
-
-
 
   ]
 

@@ -13,6 +13,7 @@ import imageWorkers from '../../../assets/images/imageWorkers.svg'
 import misionVisionImage from '../../../assets/images/misionVisionImage.svg'
 import imgContact from '../../../assets/images/imgContact.svg'
 import FormComponent from '../../shared/formComponent/formComponent'
+import Carousel from '../../shared/carousel/Carousel'
 
 
 
@@ -40,13 +41,17 @@ export default function Home() {
     }
   ]
 
-
+// <TittleImage></TittleImage>
 
 
   return (
     <div className=''>
       {/* titulo con imagen */}
-      <TittleImage></TittleImage>
+      <div className='container'>
+        <Carousel></Carousel>
+      
+      </div>
+      
       {/*diseño obras y servicios seccion */}
       <div className='container mt-2 mb-2 '>
         <div className=' row justify-content-between h-75' >
