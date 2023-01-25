@@ -4,9 +4,12 @@ import './ourServiceCard.css'
 
 
 export default function OurServiceCard({tittle,icon,bgImage,description}) {
+
+
+
   return (
       <div className='bg-white mt-2 mb-4 p-0 m-0 '>
-        <div className='bg-design p-4 m-0  p-4 color-white'>
+        <div className={bgImage}>
            
               <img className='icon-size' src={icon}/>
               <h2>{tittle}</h2>
