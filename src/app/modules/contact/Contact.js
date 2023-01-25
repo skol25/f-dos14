@@ -71,22 +71,20 @@ export default function Contact() {
 
          {/*info de contacto  */}
       
-      <div className='row p-0 m-0' >
-      <div className='col-6 p-0 '>
-      
-        <FormComponent />
-      
-      </div>
-        <div className='col-1 v-line-blue'>
-         
-        
-        </div>
-        <div className='col-5 p-0'>
-          <img src={SolariumContactImage}/>
-        
-        </div>
-        
-      </div>
+         <div className='d-flex justify-content-between h-auto position-relative'>
+
+         <div className='h-100'>
+          <FormComponent isbgDark={false}/>
+         </div>
+         <div class="v-line-blue m-2 ms-4 d-none d-md-block p-2">
+         </div>
+         <div className=' m-0 p-0'>
+           <img src={SolariumContactImage} className='w-100 h-100' alt='contacto'/>
+         </div>
+
+
+
+       </div>
     
     
 
