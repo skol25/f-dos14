@@ -7,10 +7,6 @@ import collageService from '../../../assets/images/collageService.jpg'
 
 export default function Carousel() {
 
-    
-
-
-
   return (
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -22,22 +18,22 @@ export default function Carousel() {
       <div class="carousel-item active">
         <img src={collageObras} class="d-block w-100  " alt="..."/>
         <div class="carousel-caption d-none d-md-block">
-          <h5>Mejorando los sistemas con nuestras obras</h5>
+          <h4>Mejorando los sistemas con nuestras obras</h4>
           <p>Instalación de dos sistema de presión constante con variador de frecuencia para aducción de agua, en edificio Siemens Energy Venezuela.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src={collageService} class="d-block w-100" alt="..."/>
         <div class="carousel-caption d-none d-md-block">
-          <h5>Alguno de nuestros servicios</h5>
-          <p className='fs-4'>Mantenimiento preventivo y correctivo de generador electrictrico de 344 Kva. 
+          <h4>Alguno de nuestros servicios</h4>
+          <p>Mantenimiento preventivo y correctivo de generador electrictrico de 344 Kva. 
             Suministro e instalación de sistema de transferencia</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src={collageDesign} class="d-block w-100" alt="..."/>
         <div class="carousel-caption d-none d-md-block">
-          <h5>Ultimos diseños realizados</h5>
+          <h4>Ultimos diseños realizados</h4>
           <p>Diseño, suministro e Instalación de Cocina.</p>
         </div>
       </div>

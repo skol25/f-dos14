@@ -51,7 +51,7 @@ export default function Contact() {
           return(
             <div key={e.tittle} className='d-flex col-4 justify-content-center'>
               <div>
-                <img src={e.icon} alt='icono mail'/>
+                <img className='pe-2' src={e.icon} alt='icono mail'/>
               </div>
               <div>
                 <h3>{e.tittle}</h3>
