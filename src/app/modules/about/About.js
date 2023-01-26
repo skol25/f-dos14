@@ -46,8 +46,6 @@ export default function About() {
                 <p className='fs-6'>{e.description}</p>
               </div>
             )
-
-
           })}
         </div>
       </div>
