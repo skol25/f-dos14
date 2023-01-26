@@ -40,6 +40,9 @@ export default function Home() {
       description:'Mantenimiento mecanico y electrico de equipos, y administracion de elegada.'
     }
   ]
+  
+  /*variables para la parte de la galeria de imagenes */
+  let galerrySections=['Diseño','Obras','Servicio']
 
 // <TittleImage></TittleImage>
 
@@ -127,7 +130,20 @@ export default function Home() {
     
         </div>
     </div>
+    <div className='container mt-4'>
+          <h2 className='text-center'>Nuestro trabajo</h2>
+          <div className='d-flex justify-content-center'>
+           {galerrySections && galerrySections?.map(e=>{
 
+            return(
+
+              <p className='p-2 color-white pe-4 ps-4 bg-orange'>{e}</p>
+            )
+
+           })}
+          </div>
+    
+    </div>
 
     {/*msision y vision */}
     <div className='bg-white mt-4'>

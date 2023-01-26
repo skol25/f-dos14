@@ -57,6 +57,9 @@
     background-color: var(--main-dark-blue);
 
 }
+.bg-orange{
+    background-color: var(--main-orange);
+}
 
 /* general sizes */
 
