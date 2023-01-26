@@ -1,21 +1,23 @@
 import React from 'react'
-import TerrazaDesingBg from '../../../assets/images/TerrazaDesingBg.svg'
-import desingIcon from '../../../assets/images/designIcon.svg'
+
+import './ourServiceCard.css'
 
 
-export default function OurServiceCard() {
+export default function OurServiceCard({tittle,icon,bgImage,description}) {
+
+
+
   return (
-      <div className='bg-white'>
-        <div className='position-relative d-inline'>
-            <img className='' src={TerrazaDesingBg} />
-            <div className='position-absolute align-items-center start-100 top-0'>
-                <img className='' src={desingIcon}/>
-                <h2 className=' color-white'><span className='color-orange'>D</span>iseño</h2>
-            </div>
+      <div className='bg-white mt-2 mb-4 p-0 m-0 '>
+        <div className={bgImage}>
+           
+              <img className='icon-size' src={icon}/>
+              <h2>{tittle}</h2>
+  
         </div>
-        <p>asdasdd</p>
-
-
+        
+      <p className='p-4'>{description}</p>
+      <p className='p-2 m-0 text-end color-orange'>mas...</p>
 
 
 

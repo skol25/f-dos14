@@ -1,0 +1,23 @@
+.H-line{
+    border-bottom: 2px solid #fc9b03;
+    width: auto;
+   
+   }
+   .img-move-wrapper {
+    position: relative;
+    
+    
+    margin: 0 auto;
+    }
+   .img-move {
+    position: absolute;
+    width: 75%;
+    }
+    .img-move-1 {
+    left: 0;
+    }
+    .img-move-2 {
+        right: -21px;
+    bottom: -231px;
+    }
+    

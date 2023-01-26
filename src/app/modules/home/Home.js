@@ -13,6 +13,7 @@ import imageWorkers from '../../../assets/images/imageWorkers.svg'
 import misionVisionImage from '../../../assets/images/misionVisionImage.svg'
 import imgContact from '../../../assets/images/imgContact.svg'
 import FormComponent from '../../shared/formComponent/formComponent'
+import Carousel from '../../shared/carousel/Carousel'
 
 
 
@@ -40,13 +41,17 @@ export default function Home() {
     }
   ]
 
-
+// <TittleImage></TittleImage>
 
 
   return (
     <div className=''>
       {/* titulo con imagen */}
-      <TittleImage></TittleImage>
+      <div className='container'>
+        <Carousel></Carousel>
+      
+      </div>
+      
       {/*diseño obras y servicios seccion */}
       <div className='container mt-2 mb-2 '>
         <div className=' row justify-content-between h-75' >
@@ -92,7 +97,7 @@ export default function Home() {
               <div className='row'>
                 <div className='col-5'>
                   <div className='d-flex align-items-center'>
-                    <img src={OurQuality} alt='icon' />
+                    <img className='img-size-70' src={OurQuality} alt='icon' />
                     <h3>Nuestra calidad</h3>
                   </div>
                   <p className='fs-6'>Hemos elaborados protocolos de inspección internos para nuestros equipos de
@@ -103,7 +108,7 @@ export default function Home() {
                 </div>
                 <div className='col-5'>
                   <div className='d-flex align-items-center'>
-                    <img src={OurQualityEmployer} alt='icon' />
+                    <img className='img-size-70' src={OurQualityEmployer} alt='icon' />
                     <h3>Nuestro equipo</h3>
                   </div>
                   <p className='fs-6'>Se ha capacitado profesionalmente con estudios universitarios o técnicos a lo largo de las respectivas carreras de cada uno de ellos, y en
