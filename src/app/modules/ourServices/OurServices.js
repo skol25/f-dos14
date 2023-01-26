@@ -104,8 +104,8 @@ export default function OurServices() {
             <div className='container pt-4'>
             <div className=''>
           
-            <h3>{e.tittle}</h3>
-            <div className='row'>
+            <h3 className='mt-4 mb-4'>{e.tittle}</h3>
+            <div className='row mt-4 mb-4'>
               {e.categories && e.categories?.map(e=>{
                 return(
                   <div className='col-4'>
@@ -120,7 +120,7 @@ export default function OurServices() {
            
             
             <div className='bg-blue color-white p-2 mt-2'> 
-              <h4 className='text-center'>{e.subtittle}</h4>
+              <h4 className='text-center mt-2'>{e.subtittle}</h4>
               <p className='p-4 pb-0'>{e.description}</p>
               <div className='row p-4'>
                 {e.images && e.images?.map(e=>{

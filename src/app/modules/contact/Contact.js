@@ -44,7 +44,7 @@ export default function Contact() {
       {/*info de contacto  */}
       <div className='container mb-4'> 
 
-      <div className='bg-blue color-white  mt-4 mb-4'>
+      <div className='bg-blue color-white p-4 mt-4 mb-4'>
           <div className='row pt-2'>
           {contactInfo && contactInfo?.map(e=>{
 
