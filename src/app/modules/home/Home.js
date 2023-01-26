@@ -49,11 +49,10 @@ export default function Home() {
       {/* titulo con imagen */}
       <div className='container'>
         <Carousel></Carousel>
-      
       </div>
       
       {/*diseño obras y servicios seccion */}
-      <div className='container mt-2 mb-2 '>
+      <div className='container mt-4 mb-4 '>
         <div className=' row justify-content-between h-75' >
           {dosInfo && dosInfo?.map(e=>{
 
@@ -73,29 +72,25 @@ export default function Home() {
                 </div>
               </div>
             )
-          }) }
-          
-      
+          }) } 
+          </div>
+          <div className='d-flex justify-content-center'>
+            <ButtonSubmit textButton={'Nuestros Servicios'} />
           
           </div>
-          <ButtonSubmit textButton={'Nuestros Servicios'} />
     </div>
 
     {/*Sobre nosotros */}
     <div className=' bg-white'>
       <div className='container '>
-
-
-
-      
           <div className='row  m-2 p-4'> 
           
           <div className='col'>
           <h2 className='color-orange col'>Sobre Nosotros</h2>
     
               {/*textt */}  
-              <div className='row'>
-                <div className='col-5'>
+              <div className='row justify-content-between'>
+                <div className='col-6'>
                   <div className='d-flex align-items-center'>
                     <img className='img-size-70' src={OurQuality} alt='icon' />
                     <h3>Nuestra calidad</h3>
@@ -106,7 +101,7 @@ export default function Home() {
                       nuestros servicios.
                   </p>
                 </div>
-                <div className='col-5'>
+                <div className='col-6'>
                   <div className='d-flex align-items-center'>
                     <img className='img-size-70' src={OurQualityEmployer} alt='icon' />
                     <h3>Nuestro equipo</h3>
@@ -121,14 +116,12 @@ export default function Home() {
                 <ButtonSubmit textButton={'Nosotros'} />
 
               </div>
-
-              
               </div>
               
     
                  {/*imagen */}
                  
-                 <img src={imageWorkers} className='col-2 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
+                 <img src={imageWorkers} className='col-4 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
 
           </div>
     

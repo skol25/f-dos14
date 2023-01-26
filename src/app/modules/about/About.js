@@ -2,6 +2,11 @@ import React from 'react'
 import TittleImage from '../../shared/tittleImg/TittleImage'
 import whoAreWeImage from '../../../assets/images/quienesSomosImage.svg'
 import chooseUs from '../../../assets/images/escogenos.svg'
+import verificatedIcon from '../../../assets/images/verificatedIcon.svg'
+import helmetImage from '../../../assets/images/helmetImage.svg'
+import planification from '../../../assets/images/planification.svg'
+import userVerifiedIcon from '../../../assets/images/userVerifiedIcon.svg'
+
 
 export default function About() {
 
@@ -30,14 +35,14 @@ export default function About() {
   return (
     <div>
       <TittleImage></TittleImage>
-      <div className='container mt-4'>
-        <div className='row'>
+      <div className='container mt-5'>
+        <div className='row justify-content-between'>
           {stepsAboutUs && stepsAboutUs?.map(e=>{
 
             return(
-              <div className='col-6 text-center'>
+              <div className='col-5 text-center '>
                 <img src={e.img}/>
-                <h2 className='fs-4 '>{e.tittle}</h2>
+                <h2 className='fs-4 pt-4'>{e.tittle}</h2>
                 <p className='fs-6'>{e.description}</p>
               </div>
             )
@@ -46,13 +51,32 @@ export default function About() {
           })}
         </div>
       </div>
-      <div className='bg-blue color-white mt-4'>
+      <div className='bg-blue color-white mt-4 mb-5 p-4'>
           <div className='container pt-2 pb-2'>
-            <h3 className='border-orange-b w-100'>Acerca de nuestras prioridades a la hora de reealizar un trabajo</h3>
-            
-       
-
+          <div className='row justify-content-between'>
           
+          <div className='col-7'>
+            <h3 className='border-orange-b w-100'>Acerca de nuestras prioridades a la hora de realizar un trabajo</h3>
+            <div className='d-flex align-items-center mt-2 mb-2 p-2'>
+              <img className='img-size-70 me-2' src={verificatedIcon}/>
+              <p className='p-0 m-0'>Calidad</p>
+            </div>
+            <div className='d-flex align-items-center mt-2 mb-2 p-2'>
+              <img className='img-size-70 me-2' src={planification}/>
+              <p className='p-0 m-0'>Planificación</p>
+            </div> 
+            <div className='d-flex align-items-center mt-2 mb-2 p-2'>
+              <img className='img-size-70 me-2' src={userVerifiedIcon}/>
+              <p className='p-0 m-0'>Personal Calificado</p>
+            </div>
+          
+          
+          </div>
+       
+            <div className='col-4'>
+              <img src={helmetImage}/>
+            </div>
+            </div>
           </div>
       
       
