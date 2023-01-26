@@ -97,7 +97,7 @@ export default function Home() {
               <div className='row'>
                 <div className='col-5'>
                   <div className='d-flex align-items-center'>
-                    <img src={OurQuality} alt='icon' />
+                    <img className='img-size-70' src={OurQuality} alt='icon' />
                     <h3>Nuestra calidad</h3>
                   </div>
                   <p className='fs-6'>Hemos elaborados protocolos de inspección internos para nuestros equipos de
@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
                 <div className='col-5'>
                   <div className='d-flex align-items-center'>
-                    <img src={OurQualityEmployer} alt='icon' />
+                    <img className='img-size-70' src={OurQualityEmployer} alt='icon' />
                     <h3>Nuestro equipo</h3>
                   </div>
                   <p className='fs-6'>Se ha capacitado profesionalmente con estudios universitarios o técnicos a lo largo de las respectivas carreras de cada uno de ellos, y en
