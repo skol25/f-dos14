@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './OurServices.css'
 
 
@@ -24,25 +24,50 @@ import service3 from '../../../assets/images/latestWorks/service3.svg'
 
 export default function OurServices() {
 
+/*funcion para hacer scroll */
+//se hicieron varios pero hay que hacer que se generen dinamicos 
+const ref1 = useRef(null)
+
+const executeScroll1 = () => ref1.current.scrollIntoView()  
+
+const ref2 = useRef(null)
+
+const executeScroll2 = () => ref2.current.scrollIntoView()    
+
+const ref3 = useRef(null)
+
+const executeScroll3 = () => ref3.current.scrollIntoView()    
+   // run this function from an event handler or an effect to execute scroll 
+
+
+
+
+
+
+
+/**lista que guarda la data de las cards */
   let cardInfo=[
 
     {
       tittle:'DISEÑO',
       description:'Cronograma de trabajo, donde se identifican todas las etapas del diseño..',
       bgImage:'p-4 m-0 color-white bg-design ',
-      icon:designIcon
+      icon:designIcon,
+      ref:executeScroll1
     },
     {
       tittle:'OBRAS',
       description:'Ejecucion, inspeccion, remodelacion, levantamiento topografico de obras civiles y mecanicas.',
       bgImage:'p-4 m-0 color-white bg-obras',
-      icon:obrasIcon
+      icon:obrasIcon,
+      ref:executeScroll2
     },
     {
       tittle:'SERVICIO',
       description:'Mantenimiento mecanico y electrico de equipos, y administracion de elegada.',
       bgImage:'p-4 m-0 color-white bg-service',
-      icon:serviceIcon
+      icon:serviceIcon,
+      ref:executeScroll3
     },
     
   ]
@@ -54,21 +79,24 @@ export default function OurServices() {
       subtittle:'Ultimos diseños realizado',
       description:'',
       categories:['Diseño estructural de acero y concreto.'],
-      images:[design1,design2,design3,design4]
+      images:[design1,design2,design3,design4],
+      ref:ref1
     },
     {
       tittle:'OBRAS',
       subtittle:'Ultimas obras realizado ',
       description:'Instalación de dos sistema de presión constante con variador de frecuencia para aducción de agua, en edificio Siemens Energy Venezuela e Instalación de tubería principal de aducción de 90 mm termofusion',
       categories:['Ejecución de obras civiles y mecánicas.','Remodelaciones y recuperación de obras.','Levantamientos topográficos, áreas de trabajo, eléctricos' ,'Inspección de Obras.'],
-      images:[obras1,obras2,obras3,obras4]
+      images:[obras1,obras2,obras3,obras4],
+      ref:ref2
     },
     {
       tittle:'SERVICIO',
       subtittle:'Ultimos servicios realizados ',
       description:'Mantenimiento de Unidades de Sistema de Enfriamiento. Lavado de: filtros, serpentín, filtro en Yee y bandeja de drenaje ',
       categories:['Mantenimiento a sistema de transporte vertical','Mantenimiento a sistemas de bombeo','Mantenimiento de redes de aguas blancas y servidas','Mantenimiento a aires acondicionados centrales y particulares','Mantenimiento a sistemas eléctricos (Grupos Electrógenos, Sub-estaciones, entre otros)','Administración delegada.'],
-      images:[service1,service2,service3]
+      images:[service1,service2,service3],
+      ref:ref3
     },
 
   ]
@@ -79,7 +107,7 @@ export default function OurServices() {
   return (
     <div>
       {/* titulo con imagen */}
-      <TittleImage/>
+      <TittleImage tittle={'¿Qué ofrecemos?'} rute={'Inicio/nuestros_servicios'} bgImage={'bg-ourServices d-flex flex-column justify-content-center align-items-center'}/>
 
       {/* Pequeña descrripcion de lo que hacen  */}
 
@@ -91,7 +119,7 @@ export default function OurServices() {
 
             return(
               <div className='col'>
-                <OurServiceCard icon={e.icon} tittle={e.tittle} description={e.description} bgImage={e.bgImage} />
+                <OurServiceCard icon={e.icon} tittle={e.tittle} description={e.description} bgImage={e.bgImage} scrollTo={e.ref} />
               </div>
             )
           })}
@@ -101,10 +129,10 @@ export default function OurServices() {
       <div className='bg-white mb-4'>
         {leatestWork && leatestWork?.map(e=>{
           return(
-            <div className='container pt-4'>
+            <div ref={e.ref} className='container pt-4'>
             <div className=''>
           
-            <h3 className='mt-4 mb-4'>{e.tittle}</h3>
+            <h3  className='mt-4 mb-4'>{e.tittle}</h3>
             <div className='row mt-4 mb-4'>
               {e.categories && e.categories?.map(e=>{
                 return(
@@ -120,7 +148,7 @@ export default function OurServices() {
            
             
             <div className='bg-blue color-white p-2 mt-2'> 
-              <h4 className='text-center mt-2'>{e.subtittle}</h4>
+              <h4 className='text-center mt-4 '>{e.subtittle}</h4>
               <p className='p-4 pb-0'>{e.description}</p>
               <div className='row p-4'>
                 {e.images && e.images?.map(e=>{

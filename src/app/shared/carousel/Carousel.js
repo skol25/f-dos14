@@ -10,7 +10,7 @@ import ButtonSubmit from '../butttonSubmit/buttonSubmit';
 
 
 
-export default function Carousel() {
+export default function Carousel({redirectFunct}) {
 
   return (
 
@@ -29,7 +29,7 @@ export default function Carousel() {
           <img className='img-fluid image-size-logo' src={logodos14}/>
           
           </div>
-            <ButtonSubmit textButton={'Contactanos'} />
+            <ButtonSubmit functButton={redirectFunct} textButton={'Contactanos'} />
         </div>
       </div>
       <div class="carousel-item ">

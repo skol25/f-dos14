@@ -3,6 +3,7 @@
     
     --main-gray: #EAEAEA;
     --main-orange: #fc9b03;
+    --main-dark-orange:#D07F00;
     --main-dark-blue: #030b32;
     --main-blue: #02478a;
     --main-black: #0f0b0c;
@@ -59,6 +60,9 @@
 }
 .bg-orange{
     background-color: var(--main-orange);
+}
+.bg-dark-orange{
+    background-color: var(--main-dark-orange);
 }
 
 /* general sizes */

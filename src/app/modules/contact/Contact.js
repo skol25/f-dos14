@@ -39,7 +39,7 @@ export default function Contact() {
 
   return (
     <div>
-      <TittleImage/>
+      <TittleImage tittle={'Contactenos'} rute={'inicio/contactenos'} bgImage={'bg-contactUs d-flex flex-column justify-content-center align-items-center'}/>
 
       {/*info de contacto  */}
       <div className='container mb-4'> 

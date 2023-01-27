@@ -28,4 +28,67 @@
    ),  
    url(../../../assets/images/imageBgHome.svg);
 }
+.bg-quienesSomos{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  color: var(--main-white);
+  background-image: linear-gradient(
 
+    rgba(2, 71, 138, 0.37),
+    rgba(2, 71, 138, 0.37)
+   ),  
+   url(../../../assets/images/BgWhoAreWe.svg);
+}
+
+.bg-ourServices{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  color: var(--main-white);
+  background-image: linear-gradient(
+
+    rgba(0, 39, 78, 0.51),
+    rgba(0, 41, 81, 0.51)
+   ),  
+   url(../../../assets/images/queOfrecemosBg.svg);
+}
+
+.bg-misionVision{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  color: var(--main-white);
+  background-image: linear-gradient(
+
+    rgba(0, 39, 78, 0.51),
+    rgba(0, 41, 81, 0.51)
+   ),  
+   url(../../../assets/images/misionVisionBgi.svg);
+}
+
+
+.bg-contactUs{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  color: var(--main-white);
+  background-image: linear-gradient(
+
+    rgba(0, 39, 78, 0.51),
+    rgba(0, 41, 81, 0.51)
+   ),  
+   url(../../../assets/images/contactUsBg.svg);
+}

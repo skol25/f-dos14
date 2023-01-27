@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.css'
+import {  redirect, useNavigate } from "react-router-dom";
 
 /*iconos e imagenes */
-import TittleImage from '../../shared/tittleImg/TittleImage'
 import desingIcon from '../../../assets/images/designIcon.svg'
 import obrasIcon from '../../../assets/images/obrasIcon.svg'
 import ServiceIcon from '../../../assets/images/serviceIcon.svg'
@@ -20,7 +20,8 @@ import Carousel from '../../shared/carousel/Carousel'
 
 
 export default function Home() {
-
+  const navigate = useNavigate();
+ 
 
   //info para apartado de diseño obras y servicio
   let dosInfo = [
@@ -44,14 +45,48 @@ export default function Home() {
   /*variables para la parte de la galeria de imagenes */
   let galerrySections=['Diseño','Obras','Servicio']
 
-// <TittleImage></TittleImage>
+  let bgOrange='p-2 color-white pe-4 ps-4 bg-orange'
+  let bgDarkOrange='p-2 color-white pe-4 ps-4 bg-dark-orange'
 
+
+  /**funcion para clickear y mostrar que estoy seleccionando */
+
+  let handleClickGallery= function(e){
+
+    console.log(e)
+ 
+
+  }
+
+
+  /**funciones para redirigir a las rutas */
+
+  let handleRedirectToContact=()=>{
+    
+    navigate('/inicio/contactenos')
+  
+  }
+  let handleRedirectToServices=()=>{
+    
+    navigate('/inicio/nuestros_servicios')
+  
+  }
+  let handleRedirectToUs=()=>{
+    
+    navigate('/inicio/nosotros')
+   
+  }
+  let handleRedirectToMisionVision=()=>{
+    
+    navigate('/inicio/mision_vision')
+  
+  }
 
   return (
     <div className=''>
       {/* titulo con imagen */}
       <div className='container'>
-        <Carousel></Carousel>
+        <Carousel redirectFunct={handleRedirectToContact} ></Carousel>
       </div>
       
       {/*diseño obras y servicios seccion */}
@@ -78,7 +113,7 @@ export default function Home() {
           }) } 
           </div>
           <div className='d-flex justify-content-center'>
-            <ButtonSubmit textButton={'Nuestros Servicios'} />
+            <ButtonSubmit functButton={handleRedirectToServices} textButton={'Nuestros Servicios'} />
           
           </div>
     </div>
@@ -116,7 +151,7 @@ export default function Home() {
               </div>
               <div className='d-flex justify-content-center'>
 
-                <ButtonSubmit textButton={'Nosotros'} />
+                <ButtonSubmit functButton={handleRedirectToUs} textButton={'Nosotros'} />
 
               </div>
               </div>
@@ -137,7 +172,7 @@ export default function Home() {
 
             return(
 
-              <p className='p-2 color-white pe-4 ps-4 bg-orange'>{e}</p>
+              <button  className={bgOrange}>{e}</button>
             )
 
            })}
@@ -163,7 +198,7 @@ export default function Home() {
                 Velamos por que la seguridad y estándares de obras y obreros sea respetada y adecuada, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.
               </p>
               
-              <ButtonSubmit textButton={'NUESTRA MISION Y VISION'} />
+              <ButtonSubmit functButton={handleRedirectToMisionVision} textButton={'NUESTRA MISION Y VISION'} />
 
           </div>
         </div>

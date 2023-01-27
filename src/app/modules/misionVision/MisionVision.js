@@ -15,7 +15,7 @@ export default function MisionVision() {
   let textVision = 'En Constructora DOS14 buscamos la excelencia en las obras y estructuras y poder llevar la arquitectura a otro nivel, entregando perfección a la mano de todos. Velamos por que la seguridad y estándares de obras y obreros sea respetada y adecuada, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.'
   return (
     <div>
-      <TittleImage/>
+      <TittleImage tittle={'Misión y Vísion'} rute={'inicio/mision_vision'} bgImage={'bg-misionVision d-flex flex-column justify-content-center align-items-center'}/>
 
       <div className='container '>
         <div className='row mt-4 justify-content-between'>
