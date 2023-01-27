@@ -44,22 +44,35 @@ export default function Header() {
   return (
     <React.Fragment>
     <div className='bg-white'>
-      <div className='d-flex container justify-content-between align-items-center  '>
+      <div className='container'>
+      <div className='row'>
+      
+      <div className='col-2'>
+      <img src={logoDos14} alt='logo' className='img-fluid img-size-80' />
+      
+      </div>
 
-        <img src={logoDos14} alt='logo' className='img-fluid img-size-80' />
 
-          <div className='d-flex'>
-            {infoList && infoList?.map((e)=>{
-              return (
-                  <div key={e.tittle} className='d-flex align-items-center '>
-                    <img src={e.icon} className='img-size-20' alt={e.tittle} />
-                    <p>{e.text}</p>
-                  
-                  </div>
-              )
-            })}
+          <div className='d-flex col-10 align-items-center '>
+          <div className='row align-items-center'>
+          
+          {infoList && infoList?.map((e)=>{
+            return (
+              <div className='col-4'>
+              <div key={e.tittle} className='d-flex align-items-center p-2'>
+                <img src={e.icon} className='img-size-20' alt={e.tittle} />
+                <p className='p-0 m-0 fs-6'>{e.text}</p>
+              
+              </div>
+
+              </div>
+            )
+          })}
+          
+          </div>
           </div>
 
+      </div>
       </div>
     </div>
     <Navbar/>
