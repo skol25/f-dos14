@@ -13,6 +13,22 @@
      ),  
      url(../../../assets/images/TerrazaDesingBg.svg);
 }
+.bg-design:hover{
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  background-size: cover;
+  background-image: linear-gradient(
+
+    rgba(0, 0, 0, 0.40),
+    rgba(99, 99, 99, 0.4)
+   ),  
+   url(../../../assets/images/TerrazaDesingBg.svg);
+}
+
 .bg-obras{
 
     background-repeat: no-repeat;
@@ -27,6 +43,21 @@
       rgba(0, 0, 0, 0.40)
      ),  
      url(../../../assets/images/obrasBg.svg);
+}
+.bg-obras:hover{
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  background-size: cover;
+  background-image: linear-gradient(
+
+    rgba(37, 37, 37, 0.4),
+    rgba(99, 99, 99, 0.4)
+   ),  
+   url(../../../assets/images/obrasBg.svg);
 }
 
 .bg-service{
@@ -44,10 +75,43 @@
      ),  
      url(../../../assets/images/serviceBg.svg);
 }
+.bg-service:hover{
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: auto;
+  min-height: 250px;
+  background-size: cover;
+  background-image: linear-gradient(
+
+    rgba(37, 37, 37, 0.4),
+    rgba(99, 99, 99, 0.4)
+   ),  
+   url(../../../assets/images/serviceBg.svg);
+}
 
 
 .icon-size{
 
     width: 60px;
     height: 60px;
+}
+
+.card-animation{
+
+  transition: transform 1s ease-out;
+  transition:  0.2s;
+}
+
+.card-animation:hover{
+  cursor: pointer;
+ 
+  height: 100%;
+  transform: scaleX(1);
+  background-image: linear-gradient(
+  
+  rgba(37, 37, 37, 0.4),
+  rgba(99, 99, 99, 0.4)
+ );
 }

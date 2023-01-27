@@ -1,13 +1,16 @@
 import React from 'react'
 import './TittleImage.css'
 
-export default function TittleImage({tittle,rute}) {
+export default function TittleImage({tittle,rute,bgImage}) {
+
+
+
   return (
-    <div className='bg-img-home d-flex flex-column justify-content-center align-items-center'>
+    <div className={bgImage}>
         
         
-        <h2>titulo de prueba</h2>
-        <p>ruta</p>
+        <h2>{tittle}</h2>
+        <p>{rute}</p>
         
        
     

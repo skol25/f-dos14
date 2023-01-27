@@ -34,7 +34,7 @@ export default function About() {
 
   return (
     <div>
-      <TittleImage></TittleImage>
+      <TittleImage tittle={'¿Quienes somos?'} rute={'inicio/nosotros'} bgImage={'bg-quienesSomos d-flex flex-column justify-content-center align-items-center'}></TittleImage>
       <div className='container mt-5'>
         <div className='row justify-content-between'>
           {stepsAboutUs && stepsAboutUs?.map(e=>{

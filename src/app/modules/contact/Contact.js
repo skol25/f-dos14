@@ -39,12 +39,12 @@ export default function Contact() {
 
   return (
     <div>
-      <TittleImage/>
+      <TittleImage tittle={'Contactenos'} rute={'inicio/contactenos'} bgImage={'bg-contactUs d-flex flex-column justify-content-center align-items-center'}/>
 
       {/*info de contacto  */}
       <div className='container mb-4'> 
 
-      <div className='bg-blue color-white  mt-4 mb-4'>
+      <div className='bg-blue color-white p-4 mt-4 mb-4'>
           <div className='row pt-2'>
           {contactInfo && contactInfo?.map(e=>{
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonSubmit from '../butttonSubmit/buttonSubmit'
 import InputStandar from '../inputStandar/inputStandar'
 
 export default function FormComponent({isbgDark}) {
@@ -16,6 +17,11 @@ export default function FormComponent({isbgDark}) {
             <InputStandar placeholder={'Asunto'}/>
           </div>
           <textarea placeholder='Mensaje' class="form-control row-12 " id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div className='d-flex justify-content-center p-2'>
+        
+          <ButtonSubmit textButton={'Enviar'} />
+
         </div>
     </div>
   )
