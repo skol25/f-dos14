@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+contraseña del correo K4hA4X6@e
 
 ## Available Scripts
 

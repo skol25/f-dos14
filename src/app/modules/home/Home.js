@@ -95,11 +95,12 @@ export default function Home() {
           {dosInfo && dosInfo?.map(e=>{
 
             return(
-              <div className='col-3 '>
-              <div className='d-flex'>
+
+              <div className='col-3'>
+              <div className='d-flex flex-column flex-md-row '>
               {/*imagen */}
-              <div>
-              <img src={e.icon} className='img-size-70 ' alt='icono'/>
+              <div className='justify-content-center'>
+              <img loading='lazy' src={e.icon} className='img-size-70 ' alt='icono'/>
               
               </div>
                 {/*texto */}
@@ -109,6 +110,7 @@ export default function Home() {
                 </div>
                 </div>
               </div>
+              
             )
           }) } 
           </div>
@@ -119,18 +121,18 @@ export default function Home() {
     </div>
 
     {/*Sobre nosotros */}
-    <div className=' bg-white'>
+    <div className=' bg-white mt-4 mb-4'>
       <div className='container '>
           <div className='row  m-2 p-4'> 
           
-          <div className='col'>
+          <div className='col-md-8 col-12'>
           <h2 className='color-orange col'>Sobre Nosotros</h2>
     
               {/*textt */}  
               <div className='row justify-content-between'>
                 <div className='col-6'>
                   <div className='d-flex align-items-center'>
-                    <img className='img-size-70' src={OurQuality} alt='icon' />
+                    <img loading='lazy' className='img-size-70' src={OurQuality} alt='icon' />
                     <h3>Nuestra calidad</h3>
                   </div>
                   <p className='fs-6'>Hemos elaborados protocolos de inspección internos para nuestros equipos de
@@ -141,7 +143,7 @@ export default function Home() {
                 </div>
                 <div className='col-6'>
                   <div className='d-flex align-items-center'>
-                    <img className='img-size-70' src={OurQualityEmployer} alt='icon' />
+                    <img loading='lazy' className='img-size-70' src={OurQualityEmployer} alt='icon' />
                     <h3>Nuestro equipo</h3>
                   </div>
                   <p className='fs-6'>Se ha capacitado profesionalmente con estudios universitarios o técnicos a lo largo de las respectivas carreras de cada uno de ellos, y en
@@ -149,7 +151,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className='d-flex justify-content-center'>
+              <div className='d-flex justify-content-center mb-4'>
 
                 <ButtonSubmit functButton={handleRedirectToUs} textButton={'Nosotros'} />
 
@@ -159,7 +161,7 @@ export default function Home() {
     
                  {/*imagen */}
                  
-                 <img src={imageWorkers} className='col-4 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
+                 <img loading='lazy' src={imageWorkers} className='col-12 col-md-4 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
 
           </div>
     
@@ -170,11 +172,11 @@ export default function Home() {
     {/*msision y vision */}
     <div className='bg-white mt-4 mb-4'>
       <div className='container'>
-          <div className='row pt-4 pb-4'>
+          <div className='row p-4 m-2'>
             
-            <img  src={misionVisionImage} className='col-4' alt=' mision vission'/>
+            <img  loading='lazy' src={misionVisionImage} className='col-12 col-md-4' alt=' mision vission'/>
             
-            <div className='col-8 p-0 m-0 text-center align-items-center'>
+            <div className='col-12 col-md-8 p-0 m-0 text-center align-items-center'>
               <h3 className='color-orange' >Misión y visión</h3>
               <p>
                 Constructora DOS14 es una empresa que fue fundada con la determinación de hacer de
@@ -207,30 +209,14 @@ export default function Home() {
           </div>
           <div class="v-line m-2 ms-4 d-none d-md-block p-2">
           </div>
-          <div className=' m-0 p-0'>
-            <img src={imgContact} className='w-100 h-100' alt='contacto'/>
+          <div className=' m-0 p-0 d-none d-md-block'>
+            <img loading='lazy' src={imgContact} className='w-100 h-100' alt='contacto'/>
           </div>
-
-
-
         </div>
-        
-        
-
+      
       </div>
 
-          
-
-
-
-
     </div>
-
-
-
-
-      
-
 
     </div>
   )

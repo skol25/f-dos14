@@ -15,7 +15,7 @@ export default function Carousel({redirectFunct}) {
   return (
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators  ">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -24,12 +24,18 @@ export default function Carousel({redirectFunct}) {
     <div class="carousel-inner">
         <div class="carousel-item active" >
           <img src={imageMainCarousel} class="d-block w-100" alt="..."/>
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-flex flex-md-column justify-content-center">
           <div>
-          <img className='img-fluid image-size-logo' src={logodos14}/>
+          <div className='d-flex justify-content-center'>
+            <img className='img-fluid image-size-logo d-none d-sm-block' src={logodos14}/>
           
           </div>
+          
+          </div>
+          <div className='d-none d-xl-block'>
             <ButtonSubmit functButton={redirectFunct} textButton={'Contactanos'} />
+          
+          </div>
         </div>
       </div>
       <div class="carousel-item ">
