@@ -165,23 +165,10 @@ export default function Home() {
     
         </div>
     </div>
-    <div className='container mt-4'>
-          <h2 className='text-center'>Nuestro trabajo</h2>
-          <div className='d-flex justify-content-center'>
-           {galerrySections && galerrySections?.map(e=>{
-
-            return(
-
-              <button  className={bgOrange}>{e}</button>
-            )
-
-           })}
-          </div>
-    
-    </div>
+   
 
     {/*msision y vision */}
-    <div className='bg-white mt-4'>
+    <div className='bg-white mt-4 mb-4'>
       <div className='container'>
           <div className='row pt-4 pb-4'>
             
