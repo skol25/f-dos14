@@ -111,7 +111,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
           {cardInfo && cardInfo?.map(e=>{
 
             return(
-              <div className='col'>
+              <div className='col-12 col-md-4'>
                 <OurServiceCard icon={e.icon} tittle={e.tittle} description={e.description} bgImage={e.bgImage} scrollTo={e.ref} />
               </div>
             )

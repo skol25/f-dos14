@@ -33,7 +33,7 @@ export default function FormComponent({isbgDark}) {
    
     e.preventDefault();
     
-    emailjs.sendForm('service_yz3za6l', 'template_78i03l2', e.target, '9BVu13ZeBoHIZxrgJ')
+    emailjs.sendForm('service_fkwlhmf', 'template_78i03l2', e.target, '9BVu13ZeBoHIZxrgJ')
       .then((result) => {
           console.log(result.text);
          
