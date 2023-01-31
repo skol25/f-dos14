@@ -13,22 +13,17 @@ export default function Footer() {
   */
    let  infoList= [
 
-    {
-      icon:iconPhone,
-      tittle:'phones',
-      text:'+58-414-2662055 +58-414-1307828'
 
-    },
     {
       icon:iconMail,
       tittle:'email',
-      text:'Constructorados14@gmail.com'
+      text:'Atencion@constructorados14.com'
 
     },
     {
       icon:iconLocation,
       tittle:'addres',
-      text:'Sector Loma Gorda, Conj. Res. Loma Alta II, Nivel 4, apto 22, Carrizal, Edo. Miranda'
+      text:'san antonio de los altos sector carrizal'
 
     }
 
@@ -39,14 +34,14 @@ export default function Footer() {
     <div className='bg-white'>
       <div className='d-flex container justify-content-between align-items-center pt-2 pb-2'>
 
-        <img src={logoDos14} alt='logo' className='img-fluid img-size-80' />
+        <img loading='lazy' src={logoDos14} alt='logo' className='img-fluid img-size-80' />
 
-          <div className='d-flex'>
+          <div className='d-flex flex-column flex-md-row'>
             {infoList && infoList?.map((e)=>{
               return (
-                  <div key={e.tittle} className='d-flex align-items-center '>
-                    <img src={e.icon} className='img-size-20' alt={e.tittle} />
-                    <p>{e.text}</p>
+                  <div key={e.tittle} className='d-flex align-items-center m-2'>
+                    <img loading='lazy' src={e.icon} className='img-size-30 p-0 m-0 me-2' alt={e.tittle} />
+                    <p className='p-0 m-0'>{e.text}</p>
                   
                   </div>
               )

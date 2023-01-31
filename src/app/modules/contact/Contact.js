@@ -20,18 +20,14 @@ export default function Contact() {
     {
       icon:mailIcon,
       tittle:'Correo',
-      description:'Constructorados14@gmail.com'
+      description:'Atencion@constructorados14.com'
     },
     {
       icon:addresIcon,
       tittle:'Dirección',
-      description:'Sector Loma Gorda, Conj. Res. Loma Alta II, Nivel 4, apto 22, Carrizal, Edo. Miranda '
+      description:'san antonio de los altos sector carrizal'
     }, 
-    {
-      icon:phoneicon,
-      tittle:'Números Telefónicos',
-      description:'+58-414-2662055 +58-414-1307828'
-    }
+   
 
 
   ]
@@ -45,13 +41,13 @@ export default function Contact() {
       <div className='container mb-4'> 
 
       <div className='bg-blue color-white p-4 mt-4 mb-4'>
-          <div className='row pt-2'>
+          <div className='row pt-2 justify-content-between'>
           {contactInfo && contactInfo?.map(e=>{
 
           return(
-            <div key={e.tittle} className='d-flex col-4 justify-content-center'>
+            <div key={e.tittle} className='d-flex col-12 col-md-6  justify-content-center'>
               <div>
-                <img className='pe-2' src={e.icon} alt='icono mail'/>
+                <img loading='lazy' className='pe-2' src={e.icon} alt='icono mail'/>
               </div>
               <div>
                 <h3>{e.tittle}</h3>
@@ -78,24 +74,15 @@ export default function Contact() {
          </div>
          <div class="v-line-blue m-2 ms-4 d-none d-md-block p-2">
          </div>
-         <div className=' m-0 p-0'>
+         <div className=' m-0 p-0 d-none d-md-block'>
            <img src={SolariumContactImage} className='w-100 h-100' alt='contacto'/>
          </div>
 
-
-
        </div>
-    
-    
-
-
-
-
+  
 
       </div>
-     
-
-
+  
 
     </div>
   )

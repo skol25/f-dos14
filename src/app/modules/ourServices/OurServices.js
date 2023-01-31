@@ -37,13 +37,6 @@ const executeScroll2 = () => ref2.current.scrollIntoView()
 const ref3 = useRef(null)
 
 const executeScroll3 = () => ref3.current.scrollIntoView()    
-   // run this function from an event handler or an effect to execute scroll 
-
-
-
-
-
-
 
 /**lista que guarda la data de las cards */
   let cardInfo=[
@@ -118,7 +111,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
           {cardInfo && cardInfo?.map(e=>{
 
             return(
-              <div className='col'>
+              <div className='col-12 col-md-4'>
                 <OurServiceCard icon={e.icon} tittle={e.tittle} description={e.description} bgImage={e.bgImage} scrollTo={e.ref} />
               </div>
             )
@@ -138,7 +131,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
                 return(
                   <div className='col-4'>
                     <div className='d-flex align-items-center'>
-                      <img className='img-size-40 pe-2' src={checkBlue}/>
+                      <img loading='lazy' className='img-size-40 pe-2' src={checkBlue}/>
                       <p className='p-0 m-0'>{e}</p>
                     </div>
                   </div>
@@ -154,7 +147,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
                 {e.images && e.images?.map(e=>{
                   return(
                     <div className='col'>
-                      <img src={e}/>
+                      <img loading='lazy' src={e}/>
                     </div>
                   )
                 })}

@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <div className='bg-blue p-4 '>
         <nav className='container'>
-        <ul className='d-flex align-items-center text-center p-0 m-0 list-style-none'>
+        <ul className='d-flex flex-column flex-sm-row align-items-center text-center p-0 m-0 list-style-none'>
             {navList && navList?.map((e)=>{
               return(
                 <li key={e.tittle}>
