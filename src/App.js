@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './app/modules/about/About';
@@ -9,8 +9,28 @@ import Home from './app/modules/home/Home.js';
 import MisionVision from './app/modules/misionVision/MisionVision';
 import OurServices from './app/modules/ourServices/OurServices';
 
+
 function App() {
 
+  useEffect(() => {
+    const images = document.querySelectorAll("img");
+
+    const imgOptions = {};
+    const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+  
+      const img = entry.target;
+      img.src = img.src.replace("w=10&", "w=800&");
+      imgObserver.unobserve(entry.target);
+    });
+    }, imgOptions);
+  
+  images.forEach((img) => {
+    imgObserver.observe(img);
+  });
+  }, )
+  
 
 
 

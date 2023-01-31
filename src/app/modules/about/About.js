@@ -40,8 +40,8 @@ export default function About() {
           {stepsAboutUs && stepsAboutUs?.map(e=>{
 
             return(
-              <div className='col-5 text-center '>
-                <img loading='lazy' src={e.img}/>
+              <div key={e.tittle} className='col-5 text-center '>
+                <img alt='DOS14 foto' loading='lazy' src={e.img}/>
                 <h2 className='fs-4 pt-4'>{e.tittle}</h2>
                 <p className='fs-6'>{e.description}</p>
               </div>
@@ -59,24 +59,24 @@ export default function About() {
               <h3 className='border-orange-b w-100'>Acerca de nuestras prioridades a la hora de realizar un trabajo</h3>
 
               <div className='d-flex align-items-center mt-2 mb-2 p-2'>
-                <img loading='lazy' className='img-size-70 me-2' src={verificatedIcon}/>
+                <img alt='DOS14 foto' loading='lazy' className='img-size-70 me-2' src={verificatedIcon}/>
                 <p className='p-0 m-0'>Calidad</p>
               </div>
               
               <div className='d-flex align-items-center mt-2 mb-2 p-2'>
-                <img loading='lazy' className='img-size-70 me-2' src={planification}/>
+                <img alt='DOS14 foto' loading='lazy' className='img-size-70 me-2' src={planification}/>
                 <p className='p-0 m-0'>Planificación</p>
               </div> 
 
               <div className='d-flex align-items-center mt-2 mb-2 p-2'>
-                <img loading='lazy' className='img-size-70 me-2' src={userVerifiedIcon}/>
+                <img alt='DOS14 foto' loading='lazy' className='img-size-70 me-2' src={userVerifiedIcon}/>
                 <p className='p-0 m-0'>Personal Calificado</p>
               </div>
             
             </div>
        
             <div className='col-4'>
-              <img loading='lazy' src={helmetImage}/>
+              <img alt='DOS14 foto' loading='lazy' src={helmetImage}/>
             </div>
             </div>
           </div>

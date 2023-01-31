@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import {  redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /*iconos e imagenes */
 import desingIcon from '../../../assets/images/designIcon.svg'
@@ -41,22 +41,9 @@ export default function Home() {
       description:'Mantenimiento mecanico y electrico de equipos, y administracion de elegada.'
     }
   ]
-  
-  /*variables para la parte de la galeria de imagenes */
-  let galerrySections=['Diseño','Obras','Servicio']
-
-  let bgOrange='p-2 color-white pe-4 ps-4 bg-orange'
-  let bgDarkOrange='p-2 color-white pe-4 ps-4 bg-dark-orange'
 
 
-  /**funcion para clickear y mostrar que estoy seleccionando */
 
-  let handleClickGallery= function(e){
-
-    console.log(e)
- 
-
-  }
 
 
   /**funciones para redirigir a las rutas */
@@ -96,11 +83,11 @@ export default function Home() {
 
             return(
 
-              <div className='col-3'>
+              <div className='col-3' key={e.tittle}>
               <div className='d-flex flex-column flex-md-row '>
               {/*imagen */}
               <div className='justify-content-center'>
-              <img loading='lazy' src={e.icon} className='img-size-70 ' alt='icono'/>
+              <img  loading='lazy' src={e.icon} className='img-size-70 ' alt='icono'/>
               
               </div>
                 {/*texto */}
@@ -161,7 +148,7 @@ export default function Home() {
     
                  {/*imagen */}
                  
-                 <img loading='lazy' src={imageWorkers} className='col-12 col-md-4 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
+                 <img  loading='lazy' src={imageWorkers} className='col-12 col-md-4 clase-img p-0 m-0 '  alt='imagen de trabajadores'/>
 
           </div>
     
@@ -174,7 +161,7 @@ export default function Home() {
       <div className='container'>
           <div className='row p-4 m-2'>
             
-            <img  loading='lazy' src={misionVisionImage} className='col-12 col-md-4' alt=' mision vission'/>
+            <img   loading='lazy' src={misionVisionImage} className='col-12 col-md-4' alt=' mision vission'/>
             
             <div className='col-12 col-md-8 p-0 m-0 text-center align-items-center'>
               <h3 className='color-orange' >Misión y visión</h3>
@@ -187,7 +174,7 @@ export default function Home() {
                 Velamos por que la seguridad y estándares de obras y obreros sea respetada y adecuada, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.
               </p>
               
-              <ButtonSubmit functButton={handleRedirectToMisionVision} textButton={'NUESTRA MISION Y VISION'} />
+              <ButtonSubmit functButton={handleRedirectToMisionVision} textButton={'Nuestra misión y visión'} />
 
           </div>
         </div>
@@ -210,7 +197,7 @@ export default function Home() {
           <div class="v-line m-2 ms-4 d-none d-md-block p-2">
           </div>
           <div className=' m-0 p-0 d-none d-md-block'>
-            <img loading='lazy' src={imgContact} className='w-100 h-100' alt='contacto'/>
+            <img  loading='lazy' src={imgContact} className='w-100 h-100' alt='contacto'/>
           </div>
         </div>
       

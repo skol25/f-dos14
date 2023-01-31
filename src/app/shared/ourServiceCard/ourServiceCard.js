@@ -11,7 +11,7 @@ export default function OurServiceCard({tittle,icon,bgImage,description, scrollT
       <div onClick={scrollTo} className='bg-white mt-2 mb-4 p-0 m-0 card-animation '>
         <div className={bgImage}>
            
-              <img loading='lazy' className='icon-size' src={icon}/>
+              <img alt='DOS14 foto' loading='lazy' className='icon-size' src={icon}/>
               <h2>{tittle}</h2>
   
         </div>
