@@ -20,12 +20,12 @@ export default function Contact() {
     {
       icon:mailIcon,
       tittle:'Correo',
-      description:'Atencion@constructorados14.com'
+      description:'atencion@constructorados14.com'
     },
     {
       icon:addresIcon,
       tittle:'Dirección',
-      description:'san antonio de los altos sector carrizal'
+      description:'San antonio de los altos sector carrizal'
     }, 
    
 

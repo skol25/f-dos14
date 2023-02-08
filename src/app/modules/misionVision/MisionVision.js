@@ -2,7 +2,7 @@ import React from 'react'
 import './MisionVision.css'
 import TittleImage from '../../shared/tittleImg/TittleImage'
 import TerrazaMision from '../../../assets/images/TerrazaMision.svg'
-import visionImage1 from '../../../assets/images/visionImage1.svg'
+import visionImage1 from '../../../assets/images/roof.jpeg'
 import misionImage2 from '../../../assets/images/misionImage2.svg'
 
 

@@ -17,13 +17,13 @@ export default function Footer() {
     {
       icon:iconMail,
       tittle:'email',
-      text:'Atencion@constructorados14.com'
+      text:'atencion@constructorados14.com'
 
     },
     {
       icon:iconLocation,
       tittle:'addres',
-      text:'san antonio de los altos sector carrizal'
+      text:'San Antonio de los altos sector carrizal'
 
     }
 
