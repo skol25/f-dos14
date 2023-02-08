@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import './OurServices.css'
 
 
@@ -111,7 +111,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
           {cardInfo && cardInfo?.map(e=>{
 
             return(
-              <div className='col-12 col-md-4'>
+              <div key={e.tittle} className='col-12 col-md-4'>
                 <OurServiceCard icon={e.icon} tittle={e.tittle} description={e.description} bgImage={e.bgImage} scrollTo={e.ref} />
               </div>
             )
@@ -122,16 +122,16 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
       <div className='bg-white mb-4'>
         {leatestWork && leatestWork?.map(e=>{
           return(
-            <div ref={e.ref} className='container pt-4'>
+            <div key={e.tittle} ref={e.ref} className='container pt-4'>
             <div className=''>
           
             <h3  className='mt-4 mb-4'>{e.tittle}</h3>
             <div className='row mt-4 mb-4'>
               {e.categories && e.categories?.map(e=>{
                 return(
-                  <div className='col-4'>
+                  <div key={e} className='col-4'>
                     <div className='d-flex align-items-center'>
-                      <img loading='lazy' className='img-size-40 pe-2' src={checkBlue}/>
+                      <img alt='DOS14 foto' loading='lazy' className='img-size-40 pe-2' src={checkBlue}/>
                       <p className='p-0 m-0'>{e}</p>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ const executeScroll3 = () => ref3.current.scrollIntoView()
                 {e.images && e.images?.map(e=>{
                   return(
                     <div className='col'>
-                      <img loading='lazy' src={e}/>
+                      <img alt='DOS14 foto' loading='lazy' src={e}/>
                     </div>
                   )
                 })}

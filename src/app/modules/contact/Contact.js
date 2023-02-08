@@ -2,9 +2,7 @@ import React from 'react'
 import TittleImage from '../../shared/tittleImg/TittleImage'
 import mailIcon from '../../../assets/images/mailIcon.svg'
 import addresIcon from '../../../assets/images/addresIcon.svg'
-import phoneicon from '../../../assets/images/phoneicon.svg'
 import SolariumContactImage from '../../../assets/images/SolariumContactImage.svg'
-import blueLine from '../../../assets/images/blueLine.svg'
 import FormComponent from '../../shared/formComponent/formComponent'
 
 import './Contact.css'
@@ -47,7 +45,7 @@ export default function Contact() {
           return(
             <div key={e.tittle} className='d-flex col-12 col-md-6  justify-content-center'>
               <div>
-                <img loading='lazy' className='pe-2' src={e.icon} alt='icono mail'/>
+                <img  loading='lazy' className='pe-2' src={e.icon} alt='icono mail'/>
               </div>
               <div>
                 <h3>{e.tittle}</h3>

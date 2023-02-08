@@ -25,18 +25,18 @@ export default function MisionVision() {
           </div>
           <div className='col-12 col-md-4'>
             <div class="img-move-wrapper d-md-block d-none">
-              <img loading='lazy' class="img-move img-move-1 img-fluid" src={TerrazaMision} alt="foto 1"/> 
-              <img loading='lazy' class="img-move img-move-2 img-fluid" src={misionImage2} alt="foto 2"/> 
+              <img alt='DOS14 foto' loading='lazy' class="img-move img-move-1 img-fluid" src={TerrazaMision} /> 
+              <img alt='DOS14 foto' loading='lazy' class="img-move img-move-2 img-fluid" src={misionImage2}/> 
           
             </div>
-            <img loading='lazy' class=" d-md-none img-fluid" src={misionImage2} alt="foto 2"/>
+            <img alt='DOS14 foto' loading='lazy' class=" d-md-none img-fluid" src={misionImage2} />
           </div>
         </div>
         <div class="H-line d-md-block p-0 m-0 mb-4 mt-4">
         </div>
         <div className='d-flex flex-md-row flex-column-reverse mt-4 mb-4 justify-content-between'>
         <div className='col-12 col-md-4'>
-          <img loading='lazy' src={visionImage1}/>
+          <img alt='DOS14 foto' loading='lazy' src={visionImage1}/>
         </div>
           <div className='col-12 col-md-7'>
             <h2 className='text-center fs-1'>VISIÓN</h2>
