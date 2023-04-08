@@ -8,10 +8,6 @@ import FormComponent from '../../shared/formComponent/formComponent'
 import './Contact.css'
 
 
-
-
-
-
 export default function Contact() {
 
   let contactInfo=[
@@ -23,10 +19,9 @@ export default function Contact() {
     {
       icon:addresIcon,
       tittle:'Dirección',
-      description:'san antonio de los altos sector carrizal'
+      description:'San antonio de los altos sector carrizal'
     }, 
    
-
 
   ]
 

@@ -21,16 +21,10 @@ export default function About() {
     {
       tittle:'¿Por qué deberias escogernos?',
       img:chooseUs,
-      description:'En Constructora DOS14, C.A. seguimos rigurosamente las normas, criterios y recomendaciones de los fabricantes en la ejecución de cualquiera de nuestras labores, desde la construcción de una obra hasta el servicio de mantenimiento equipo, porque estamos convencidos que es la forma de poder garantizar la calidad de nuestro trabajo. Por tal motivo todos nuestros profesionales, técnicos, ayudantes y obreros están comprometidos en seguir los reglamentos para hacer trabajos de alta calidad. '
+      description:'En Constructora DOS14, C.A. seguimos rigurosamente las normas, criterios y recomendaciones de los fabricantes en la ejecución de cualquiera de nuestras labores, desde la construcción de una obra hasta el servicio de mantenimiento equipo, porque estamos convencidos que es la forma de poder garantizar la calidad de nuestro trabajo. Por tal motivo todos nuestros profesionales, técnicos, ayudantes y obreros están comprometidos en seguir los reglamentos para hacer trabajos de alta calidad.'
 
     }
-
-
-
   ]
-
-
-
 
   return (
     <div>

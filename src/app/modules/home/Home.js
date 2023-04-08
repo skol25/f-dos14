@@ -17,8 +17,6 @@ import Carousel from '../../shared/carousel/Carousel'
 
 
 
-
-
 export default function Home() {
   const navigate = useNavigate();
  
@@ -41,10 +39,6 @@ export default function Home() {
       description:'Mantenimiento mecanico y electrico de equipos, y administracion de elegada.'
     }
   ]
-
-
-
-
 
   /**funciones para redirigir a las rutas */
 
@@ -166,13 +160,10 @@ export default function Home() {
             <div className='col-12 col-md-8 p-0 m-0 text-center align-items-center'>
               <h3 className='color-orange' >Misión y visión</h3>
               <p>
-                Constructora DOS14 es una empresa que fue fundada con la determinación de hacer de
-                nuestro entorno un lugar mejor, por lo que está basada en la ética, el profesionalismo y la
-                integridad de hacer nuestro trabajo correctamente
+              Constructora DOS14 es una empresa que fue fundada con la determinación de hacer de nuestro entorno un lugar mejor, por lo que está basada en la ética, el profesionalismo y la integridad de hacer nuestro trabajo correctamente.
               </p>
               <p>
-                Velamos por que la seguridad y estándares de obras y obreros sea respetada y adecuada, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.
-              </p>
+              Velamos porque la seguridad y los estándares de obras y obreros sean respetados y adecuados, para poder entregar una obra digna de admirar y llamativa, donde se vea el empeño, amor, dedicación y profesionalismo que ponemos en cada trabajo.              </p>
               
               <ButtonSubmit functButton={handleRedirectToMisionVision} textButton={'Nuestra misión y visión'} />
 
