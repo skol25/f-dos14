@@ -31,12 +31,12 @@ export default function Home() {
     {
       tittle:'OBRAS',
       icon:obrasIcon,
-      description:'Ejecucion, inspeccion, remodelacion, levantamiento topografico de obras civiles y mecanicas.'
+      description:'Ejecución, inspección, remodelación, levantamiento topográfico de obras civiles y mecanicas.'
     },
     {
       tittle:'SERVICIO',
       icon:ServiceIcon,
-      description:'Mantenimiento mecanico y electrico de equipos, y administracion de elegada.'
+      description:'Mantenimiento mecánico y electrico de equipos, y administración de elegada.'
     }
   ]
 
